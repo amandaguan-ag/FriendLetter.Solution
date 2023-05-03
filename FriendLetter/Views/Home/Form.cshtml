@@ -11,6 +11,7 @@
   </head>
   <body>
     <h1>Fill in your name and your friend's name to create your custom postcard!</h1>
+    @* ncludes action="/postcard". This tells ASP.NET Core MVC where to submit the data provided through this form *@
     <form action="/postcard" method="post">
       <label for="sender">Sender's Name</label>
       <input id="sender" name="sender" type="text">

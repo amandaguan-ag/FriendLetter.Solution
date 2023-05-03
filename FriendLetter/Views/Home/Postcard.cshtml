@@ -11,6 +11,12 @@
   </head>
   <body>
     <h1>Hello From Afar</h1>
+@* The @ character indicates the start of Razor code. Razor will evaluate anything following this symbol.
+
+Model is a property that Razor provides so we can access the model that's passed into the view. We haven't passed in a model into the view yet, but we will soon. In this case, we'll be passing in an instance of the LetterVariable class that we created in the last lesson.
+
+Since we're passing in a LetterVariable object into the view as Razor's Model property, that means we can access the LetterVariable's Recipient property. This will let us put a unique name in the view instead of the more generic friend.     *@
+    @* @Model.Recipient is the same as calling myLetterVariable.Recipient     *@
     <p>Dear @Model.Recipient,</p>
     <p>How are you? I hope that you are having a nice weekend. I'm vacationing in the Iceland while I learn programming!</p>
     <p>@Model.Recipient, you would not believe how cold it is here. I should have gone to Hawaii instead.</p>
